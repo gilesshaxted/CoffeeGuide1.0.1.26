@@ -27,7 +27,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build Web App
-        run: ./gradlew wasmJsBrowserDistribution
+        run: ./gradlew :composeApp:wasmJsBrowserDistribution
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
